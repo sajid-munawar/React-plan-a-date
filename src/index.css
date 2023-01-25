@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  background: #0AC2CC;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.container {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
