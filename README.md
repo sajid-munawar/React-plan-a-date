@@ -2,7 +2,6 @@ To run locally run these commands in terminal:
 
 `git clone https://github.com/sajid-munawar/React-plan-a-date.git`  
 `cd React-plan-a-date`  
-`git checkout login`  
 `npm start`  
 
 To see live follow this link down below:  
