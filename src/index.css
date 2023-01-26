@@ -22,6 +22,74 @@ body {
   text-align: center;
 }
 
+img {
+  margin-bottom: 50px;
+}
+
 form {
   background: white;
+  padding: 30px 30px 50px 30px;
+  border-radius: 24px;
+}
+
+form h1 {
+  font-weight: 300;
+}
+
+
+form h6 {
+  margin-bottom: 40px;
+  color: gray;
+  line-height: 20px;
+}
+
+.form-container>input {
+  padding: 12px;
+  width: 85%;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+
+.btn-filled {
+  font-size: 14px;
+  padding: 12px 38%;
+  background: #0AC2CC;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin: 30px;
+  cursor: pointer;
+}
+
+
+.btn-empty {
+  font-size: 14px;
+  padding: 12px 35%;
+  background: white;
+  border: 1px solid #0AC2CC;
+  border-radius: 12px;
+  color: #0AC2CC;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-around;
+}
+
+.checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+hr {
+  margin-bottom: 20px;
 }

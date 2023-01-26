@@ -1,4 +1,5 @@
 import Logo from '../assets/Logo/Logo.png'
+import Button from '../components/button'
 import Input from '../components/input'
 
 export default function Login() {
@@ -12,11 +13,18 @@ export default function Login() {
             <Input type={'email'} placeholder={'write your email'} name={'email'} />
             <Input type={'password'} placeholder={'enter your password'} name={'password'} />
             <div className='remember'>
-              <input type={'checkbox'} id='remember' />
+              <div>
+              <input type={'checkbox'} id='remember' className='checkbox'/>
               <label htmlFor='rember' >Remember me</label>
+              </div>
               <a href={'/'} >Forgot password</a>
             </div>
-            
+            <Button className={'btn-filled'} text={'Login'} />
+            <hr/>
+            <a href='/'>Don't have an account?</a>
+            <br/>
+            <Button className={'btn-empty'} text={'Register'} />
+
             </form>
         </div>
     </div>
