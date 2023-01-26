@@ -93,3 +93,9 @@ a {
 hr {
   margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+	.container {
+    width: 100%;
+  }
+}
