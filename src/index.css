@@ -43,14 +43,6 @@ form h6 {
   line-height: 20px;
 }
 
-.form-container>input {
-  padding: 12px;
-  width: 85%;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  border: 1px solid gray;
-}
-
 .btn-filled {
   font-size: 14px;
   padding: 12px 38%;
