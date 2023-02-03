@@ -1,0 +1,41 @@
+/* floating Input */
+
+.float {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  height: 2.5em;
+  margin-bottom: 12px;
+}
+
+.float__input {
+  position: absolute;
+  padding: 0.75em 1em;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.float__lbl {
+  position: absolute;
+  z-index: 10;
+  left: 14px;
+  top: 8px;
+  color: gray;
+  transition: all 5ms ease-in;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.float__input:is(:focus, :not(:placeholder-shown)) + .float__lbl {
+  font-weight: 600;
+  font-size: 0.8em;
+  top: -9px;
+  left: 10px;
+  background-color: white;
+  padding: 0 1px;
+
+}
