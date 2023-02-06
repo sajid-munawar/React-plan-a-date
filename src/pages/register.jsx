@@ -1,11 +1,12 @@
 import React from "react";
+import { Images } from "../config";
 
 export const Register = () => {
   return (
     <div className="auth-wrapper">
       <div className="auth-container">
         <div className="logo-holder">
-          <img src="" alt="logo" />
+          <img src={Images.LOGO} alt="logo" />
         </div>
         <form className="auth-form">
           <h1>Create An Account.</h1>

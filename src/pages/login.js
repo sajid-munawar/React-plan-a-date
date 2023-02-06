@@ -1,12 +1,12 @@
-import Logo from "../assets/Logo/Logo.png";
 import Button from "../components/button";
 import Input from "../components/input";
+import { Images } from "../config";
 
 export const Login = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <img src={Logo} alt="logo" />
+        <img src={Images.LOGO} alt="logo" />
         <form className="form-container">
           <h1 className="login-heading">Login To Your Account</h1>
           <h6 className="login-sub-heading">Please enter your login details</h6>
