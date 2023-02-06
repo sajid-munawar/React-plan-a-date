@@ -6,3 +6,9 @@ To run locally run these commands in terminal:
 
 To see live follow this link down below:  
 [see Live](https://tangerine-naiad-11f910.netlify.app/)
+
+
+### Commands used for development  
+
+`npx create-react-app`  
+`npm install react-router-dom`
