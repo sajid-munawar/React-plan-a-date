@@ -8,10 +8,42 @@
   --clr_blue: #0ac2cc;
   --clr_black: #000;
   --clr_white: #fff;
+  --clr_grey: grey;
 }
+
+/* html tags styling */
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--clr_black);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+
+input {
+  padding: 12px;
+  width: 85%;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--clr_grey);
+}
+
+/* global styles */
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .auth-wrapper {
@@ -24,37 +56,45 @@ body {
 }
 
 .auth-container {
-  width: 40%;
+  max-width: 40%;
 }
 
 .logo-holder {
   width: 85px;
   height: 85px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
-form {
-  background: white;
+.auth-form {
+  background: var(--clr_white);
+  width: 100%;
   padding: 30px 30px 50px 30px;
   border-radius: 24px;
+  text-align: center;
 }
 
-form h1 {
-  font-weight: 300;
+.auth-form p {
+  padding-top: 5px;
 }
+
+.split-input {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.split-input input {
+  width: 148px;
+}
+/* form h1 {
+  font-weight: 300;
+} */
 
 form h6 {
   margin-bottom: 40px;
   color: gray;
   line-height: 20px;
-}
-
-.form-container > input {
-  padding: 12px;
-  width: 85%;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  border: 1px solid gray;
 }
 
 .btn-filled {

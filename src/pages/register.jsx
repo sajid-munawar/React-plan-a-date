@@ -6,7 +6,7 @@ export const Register = () => {
     <div className="auth-wrapper">
       <div className="auth-container">
         <div className="logo-holder">
-          <img src={Images.LOGO} alt="logo" />
+          <img src={Images.LOGO} alt="logo" className="img-fluid"/>
         </div>
         <form className="auth-form">
           <h1>Create An Account.</h1>
