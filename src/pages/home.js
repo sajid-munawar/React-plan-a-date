@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <>
       <a href="/register">
-        <Button className="btn-filled">Register</Button>
+        <Button className="btn-filled"> Register </Button>
       </a>
     </>
   );
