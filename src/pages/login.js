@@ -1,5 +1,5 @@
-import Button from "../components/button";
-import Input from "../components/input";
+import {Button} from "../components";
+import {Input} from "../components";
 import { Images } from "../config";
 
 export const Login = () => {

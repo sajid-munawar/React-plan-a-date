@@ -31,11 +31,11 @@ p {
 }
 
 
-input {
+input:not([type='checkbox']) {
   padding: 12px;
   width: 85%;
   margin-bottom: 12px;
-  border-radius: 12px;
+  border-radius: 50px;
   border: 1px solid var(--clr_grey);
 }
 
@@ -85,7 +85,23 @@ input {
 }
 
 .split-input input {
-  width: 148px;
+  width: 35%;
+}
+
+.terms-conditions {
+  padding-left: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.terms-conditions p {
+  padding-left: 5px;
+}
+
+.register-hr {
+  max-width: 60%;
+  margin:0 auto 20px;
 }
 /* form h1 {
   font-weight: 300;

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Button({className,text}) {
+export const Button=({className,children})=> {
   return (
-    <button className={className}>{text}</button>
+    <button className={className}>{children}</button>
   )
 }
