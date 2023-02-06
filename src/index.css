@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Colors and font sizes */
 :root {
   --clr_blue: #0ac2cc;
   --clr_black: #000;
@@ -14,22 +14,23 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.wrapper {
-  background: #0ac2cc;
+.auth-wrapper {
+  background: var(--clr_blue);
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.container {
-  width: 30%;
-  margin: auto;
-  text-align: center;
+.auth-container {
+  width: 40%;
 }
 
-img {
-  margin-bottom: 50px;
+.logo-holder {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
 }
 
 form {
