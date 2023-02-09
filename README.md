@@ -1,3 +1,5 @@
+[Prototype](https://xd.adobe.com/view/0a5e61a8-9070-4cb5-a0a4-049ba1cb0d7e-5f0d/grid/)
+
 To run locally run these commands in terminal:
 
 `git clone https://github.com/sajid-munawar/React-plan-a-date.git`  
@@ -5,8 +7,7 @@ To run locally run these commands in terminal:
 `npm install`   
 `npm start`  
 
-To see live follow this link down below:  
-[see Live](https://tangerine-naiad-11f910.netlify.app/)
+
 
 
 ### Commands used for development  
