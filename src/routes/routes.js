@@ -1,14 +1,16 @@
 import React from "react";
 import { Route, Routes as Router } from "react-router-dom";
 import { Navigations } from "../config";
-import { Home, Login, Register } from "../pages";
+import { Home, Login, Register,Welcome } from "../pages";
 
 export function Routes() {
   return (
     <Router>
       <Route path={Navigations.LOGIN} element={<Login />} />
       <Route path={Navigations.Register} element={<Register />} />
-      <Route path='/' element={<Home />} />
+      <Route path={Navigations.Home} element={<Home />} />
+      <Route path={Navigations.Welcome} element={<Welcome />} />
+
     </Router>
   );
 }

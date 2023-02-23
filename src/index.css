@@ -41,13 +41,38 @@ input:not([type='checkbox']) {
 
 /* global styles */
 
+.start-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./assets//stepout.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.stepout-img {
+  height: 120px;
+  width: auto;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr_blue);
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
 .auth-wrapper {
-  background: var(--clr_blue);
   height: 100vh;
   width: 100%;
   display: flex;
