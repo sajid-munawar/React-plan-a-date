@@ -4,9 +4,11 @@ import { Images } from "../config";
 
 export const Login = () => {
   return (
-    <div className="wrapper">
-      <div className="container">
-        <img src={Images.LOGO} alt="logo" />
+    <div className="general-wrapper bg-blue">
+      <div className="logo-holder">
+        <img src={Images.LOGO} alt="logo" className="img-fluid" />
+      </div>
+      <div className="content-container bottom-fixed">
         <form className="form-container">
           <h1 className="login-heading">Login To Your Account</h1>
           <h6 className="login-sub-heading">Please enter your login details</h6>
