@@ -6,7 +6,7 @@ import { ArrowButton } from "../components/ArrowButton";
 export function Feature3() {
   return (
     <div className="general-wrapper welcome">
-      <div className="welcome-container">
+      <div className="content-container">
         <img src={Images.STEPOUT} alt="stepout" className="stepout-img-we" />
         <h1 className="welcome-h">Feature Name Here 3</h1>
         <p className="welcome-text">
@@ -19,10 +19,10 @@ export function Feature3() {
           <div className="feature-grey-box"></div>
           <div className="feature-blue-box"></div>
         </div>
-        <Link to={Navigations.LOGIN}>
+        <Link to={Navigations.WELCOMEPROCEED}>
           <ArrowButton classname="arrow-button" />
         </Link>
       </div>
     </div>
-  )
+  );
 }

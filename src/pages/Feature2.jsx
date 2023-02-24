@@ -6,7 +6,7 @@ import { ArrowButton } from "../components/ArrowButton";
 export function Feature2() {
   return (
     <div className="general-wrapper welcome">
-      <div className="welcome-container">
+      <div className="content-container">
         <img src={Images.STEPOUT} alt="stepout" className="stepout-img-we" />
         <h1 className="welcome-h">Feature Name Here 2</h1>
         <p className="welcome-text">
@@ -24,5 +24,5 @@ export function Feature2() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

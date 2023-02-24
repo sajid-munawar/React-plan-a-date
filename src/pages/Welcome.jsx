@@ -6,7 +6,7 @@ import { ArrowButton } from "../components/ArrowButton";
 export function Welcome() {
   return (
     <div className="general-wrapper welcome">
-      <div className="welcome-container">
+      <div className="content-container">
         <img src={Images.STEPOUT} alt="stepout" className="stepout-img-we" />
         <h1 className="welcome-h">Welcome</h1>
         <p className="welcome-text">
