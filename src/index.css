@@ -9,6 +9,15 @@
   --clr_black: #000;
   --clr_white: #fff;
   --clr_grey: grey;
+  --clr_grey75: rgba(0, 0, 0, 0.75);
+  --clr_grey70: rgba(0, 0, 0, 0.7);
+  --clr_grey50: rgba(0, 0, 0, 0.5);
+  --clr_shadow: rgba(0, 0, 0, 0.16);
+  --arrow_shadow: 0px 2px 10px 0px var(--clr_shadow);
+  --login_cyan_chadow: 0px 3px 6px var(--clr_shadow);
+  --login_white_shadow: 0px 2px 8px -1px var(--clr_shadow);
+  --chip_shadow: 0px 3px 6px 0px var(--clr_shadow);
+  --clr_chip_all: rgba(245, 245, 245, 1);
 }
 
 /* html tags styling */
@@ -41,13 +50,151 @@ input:not([type='checkbox']) {
 
 /* global styles */
 
+.general-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+.splash {
+  background-image: url('./assets//stepout.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.stepout-img {
+  height: 120px;
+  width: auto;
+}
+
+.welcome {
+  background-image: url('./assets//welcomebg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.stepout-img-we {
+  height: 175px;
+  width: auto;
+}
+
+.content-container {
+  max-width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--clr_white);
+  border-radius: 20px 20px 0 0;
+}
+
+.welcome-h {
+  color: var(--clr_blue);
+  padding-top: 20px;
+}
+
+.welcome-text {
+  margin: 5px 30px;
+  opacity: 0.7;
+  padding: 0 30px;
+}
+
+.feature-tiny-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.feature-blue-box {
+  width: 15px;
+  height: 5px;
+  background: var(--clr_blue);
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.feature-grey-box {
+  width: 15px;
+  height: 5px;
+  background: #e4e4e4;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.arrow-button {
+  width: 72px;
+  height: 40px;
+  border: 1px solid var(--clr_white);
+  background: var(--clr_white);
+  border-radius: 20px;
+  margin-top: 34px;
+  cursor: pointer;
+  box-shadow: var(--arrow_shadow);
+  -webkit-box-shadow: var(--arrow_shadow);
+  -moz-box-shadow: var(--arrow_shadow);
+}
+
+.arrow-button::before {
+  display: grid;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f061";
+  font-size: 25px;
+  color: var(--clr_blue);
+  align-items: center;
+  transform: scale(1.2, 1);
+}
+
+/* Welcome proceed styles */
+.bg-blue {
+  background-color: var(--clr_blue);
+  background-image: url('./assets//bluebgicons.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom-fixed {
+  position: fixed;
+  bottom: 0;
+}
+
+.proceed-h1 {
+  padding: 22px;
+}
+
+.proceed-login {
+  margin-bottom: 30px;
+}
+
+/* login page styles */
+
+.login-heading {
+  padding-top: 20px;
+}
+
+/* .main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr_blue);
+} */
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
 .auth-wrapper {
-  background: var(--clr_blue);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -64,6 +211,8 @@ input:not([type='checkbox']) {
   height: 85px;
   margin: 0 auto;
   margin-bottom: 60px;
+  position: fixed;
+  top: 50px;
 }
 
 .auth-form {
@@ -114,26 +263,36 @@ form h6 {
 }
 
 .btn-filled {
+  width: 315px;
   font-size: 14px;
-  padding: 12px 38%;
+  padding: 12px 130px;
   background: #0ac2cc;
   border: none;
-  border-radius: 12px;
+  border-radius: 24px;
   color: white;
   margin: 30px;
   cursor: pointer;
 }
 
 .btn-empty {
+  width: 315px;
   font-size: 14px;
-  padding: 12px 35%;
+  padding: 12px 130px;
   background: white;
   border: 1px solid #0ac2cc;
-  border-radius: 12px;
+  border-radius: 24px;
   color: #0ac2cc;
   cursor: pointer;
   margin-top: 5px;
 }
+
+/* .register-white {
+  color: var(--clr_white);
+}
+
+.login-blue {
+  color: var(--clr_blue);
+} */
 
 a {
   text-decoration: none;
@@ -145,10 +304,25 @@ a {
   justify-content: space-around;
 }
 
-.checkbox {
-  margin-right: 5px;
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  gap:5px;
   cursor: pointer;
 }
+
+.remember-me {
+  cursor: pointer;
+}
+
+.unchecked {
+  display: none;
+}
+
+/* .checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+} */
 
 hr {
   margin-bottom: 20px;
