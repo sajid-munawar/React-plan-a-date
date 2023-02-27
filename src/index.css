@@ -174,6 +174,12 @@ input:not([type='checkbox']) {
   margin-bottom: 30px;
 }
 
+/* login page styles */
+
+.login-heading {
+  padding-top: 20px;
+}
+
 /* .main-container {
   width: 100%;
   height: 100vh;
@@ -257,7 +263,7 @@ form h6 {
 }
 
 .btn-filled {
-  max-width: 315px;
+  width: 315px;
   font-size: 14px;
   padding: 12px 130px;
   background: #0ac2cc;
@@ -298,10 +304,25 @@ a {
   justify-content: space-around;
 }
 
-.checkbox {
-  margin-right: 5px;
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  gap:5px;
   cursor: pointer;
 }
+
+.remember-me {
+  cursor: pointer;
+}
+
+.unchecked {
+  display: none;
+}
+
+/* .checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+} */
 
 hr {
   margin-bottom: 20px;

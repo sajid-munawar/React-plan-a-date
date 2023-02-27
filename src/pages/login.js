@@ -1,8 +1,15 @@
-import {Button} from "../components";
-import {Input} from "../components";
-import { Images } from "../config";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../components";
+import { Input } from "../components";
+import { Images, Navigations } from "../config";
 
 export const Login = () => {
+  const [isCheck, setIsCheck] = useState(false);
+  const handleCheck = () => {
+    setIsCheck(!isCheck);
+  };
+
   return (
     <div className="general-wrapper bg-blue">
       <div className="logo-holder">
@@ -23,17 +30,36 @@ export const Login = () => {
             name={"password"}
           />
           <div className="remember">
-            <div>
-              <input type={"checkbox"} id="remember" className="checkbox" />
-              <label htmlFor="rember">Remember me</label>
+            <div className="checkbox-container">
+              <img
+                id="remember"
+                src={Images.CHECKED}
+                alt="checkbox"
+                className={isCheck ? "" : "unchecked"}
+                onClick={handleCheck}
+              />
+              <img
+                src={Images.UNCHECKED}
+                alt="checkbox"
+                className={isCheck ? "unchecked" : ""}
+                onClick={handleCheck}
+              />
+              <div className="remember-me" onClick={handleCheck}>
+                Remember Me
+              </div>
             </div>
             <a href={"/"}>Forgot password</a>
           </div>
-          <Button className={"btn-filled"} text={"Login"} />
+
+          <Link to={Navigations.LOGIN}>
+            <Button className="btn-filled proceed-login">Login</Button>
+          </Link>
           <hr />
           <a href="/">Don't have an account?</a>
           <br />
-          <Button className={"btn-empty"} text={"Register"} />
+          <Link to={Navigations.REGISTER}>
+            <Button className="btn-empty proceed-login">Register</Button>
+          </Link>
         </form>
       </div>
     </div>
